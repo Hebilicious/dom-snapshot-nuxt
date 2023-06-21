@@ -20,6 +20,7 @@ export default defineNuxtPlugin(async () => {
   // Save snapshots on destroy
   window.addEventListener("visibilitychange", () => {
     if (document.visibilityState === "hidden") {
+      if (snapshots.value.size === 0) return
       sessionStorage.setItem(NUXT_SNAPSHOT_KEY, JSON.stringify([...snapshots.value]))
     }
   })
