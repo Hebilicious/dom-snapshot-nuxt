@@ -1,5 +1,5 @@
 {
-  "name": "@hebilicious/my-module",
+  "name": "@hebilicious/dom-snapshot-nuxt",
   "type": "module",
   "version": "0.0.1",
   "author": {
@@ -11,15 +11,15 @@
   "repository": "Hebilicious/nuxt-module-template",
   "exports": {
     ".": {
-      "types": "./dist/module.d.ts",
       "require": {
-        "default": "./dist/module.cjs",
-        "types": "./dist/module.d.cts"
+        "types": "./dist/module.d.cts",
+        "default": "./dist/module.cjs"
       },
       "import": {
-        "default": "./dist/module.mjs",
-        "types": "./dist/module.d.mts"
+        "types": "./dist/module.d.mts",
+        "default": "./dist/module.mjs"
       },
+      "types": "./dist/module.d.ts",
       "default": "./dist/module.mjs"
     },
     "./*": "./*"
@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "@nuxt/kit": "3.5.3",
+    "@vueuse/core": "^10.2.0",
     "defu": "^6.1.2"
   },
   "devDependencies": {

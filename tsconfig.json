@@ -12,8 +12,8 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "paths": {
-      "#imports": ["packages/my-module/node_modules/nuxt/app.d.ts"],
-      "#app": ["packages/my-module/node_modules/nuxt/dist/app"]
+      "#imports": ["packages/dom-snapshot-nuxt/node_modules/nuxt/app.d.ts"],
+      "#app": ["packages/dom-snapshot-nuxt/node_modules/nuxt/dist/app"]
     }
   },
   "exclude": [

@@ -1,39 +1,56 @@
-# ⚗️ Nuxt Module Template
+# ⚗️ Snapshot Dom Nuxt Module
 
-[![CI](https://github.com/Hebilicious/authjs-nuxt/actions/workflows/ci.yaml/badge.svg)](https://github.com/Hebilicious/authjs-nuxt/actions/workflows/ci.yaml)
-[![npm version](https://badge.fury.io/js/@hebilicious%2Fauthjs-nuxt.svg)](https://badge.fury.io/js/@hebilicious%2Fauthjs-nuxt)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+🚀 Welcome to __Hebilicious Snapshot Dom Nuxt Module__!  
 
-🚀 Welcome to __Hebilicious Nuxt Module Starter Template__!  
+Inspired by [SvelteKit](https://kit.svelte.dev/docs/snapshots) same feature.
 
-This is a Nuxt Module Repo Template Starter.
-It comes with a base module that you can use to start your own module.
+Ephemeral DOM state — like scroll positions on sidebars, the content of <input> elements and so on — is discarded when you navigate from one page to another.
 
-## Batteries Included
-
-- 📦 PNPM monorepo
-- 🏗️ Nuxt Module with `nuxt-build-module` and `unbuild`
-- 📝 Docs with docus
-- ✅ Tests with vitest
-- 🔨 Monorepo tasks with NX
-- 🔄 CI with Github Actions
-- 🚀 Trigger NPM release + changelog from CLI
-- 📏 Conventional commits
-- 🔄 Renovate config
-
-## ⚠️ Disclaimer
-
-_🧪 This module is really unstable and is not recommended for production use. It is intended for those who want to experiment with the edge._
-
+For example, if the user fills out a form but clicks a link before submitting, then hits the browser's back button, the values they filled in will be lost. In cases where it's valuable to preserve that input, you can take a snapshot of DOM state, which can then be restored if the user navigates back.
 
 ## 📦 Installation
 
-Use pnpm for development of your module :
+Install this module from NPM :
 
 ```bash
-pnpm i 
+npm i @hebilicious/snapshot-dom-nuxt-module
 ```
 
+Add it to your `nuxt.config.ts` file:
+
+```ts
+export default defineNuxtConfig({
+  modules: [
+    "@hebilicious/snapshot-dom-nuxt-module"
+  ]
+})
+```
+
+## 🚀 Usage
+
+```vue
+<script setup lang="ts">
+const comment = ref("") // This will be restored on nav and refresh
+const another = ref("") // This will be restored on nav
+const no = ref("") // This won't be
+
+useSnapshot([
+  { capture: comment, restore: (v) => { comment.value = toValue(v) } },
+  { capture: another, restore: (v) => { another.value = toValue(v) }, persist: false }
+])
+</script>
+
+<template>
+  <input v-model="comment" type="text">
+  <input v-model="another" type="text">
+  <input v-model="no" type="text">
+</template>
+```
+
+- The restoration will work after a navigation and a hard reload, like hitting the refresh button or navigating to another site and coming back.
+- The captured data must be serialized with `JSON.stringify`
+- The captured data is kept in memory, so don't capture too much data.
+- If the data is too large, the session storage won't work.
 
 ## 📦 Contributing
 

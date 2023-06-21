@@ -5,7 +5,7 @@
   "private": true,
   "packageManager": "pnpm@8.6.3",
   "scripts": {
-    "build": "rimraf packages/*/dist && turbo run build --filter=@hebilicious/my-module",
+    "build": "rimraf packages/*/dist && turbo run build --filter=@hebilicious/dom-snapshot-nuxt",
     "turbo:build": "turbo run build",
     "lint": "eslint --cache .",
     "lint:fix": "nr lint --fix",
