@@ -12,7 +12,7 @@
 
 🚀 Welcome to __Hebilicious Snapshot Dom Nuxt Module__!  
 
-Inspired by [SvelteKit](https://kit.svelte.dev/docs/snapshots) same feature.
+Inspired by [SvelteKit's](https://kit.svelte.dev/docs/snapshots) same feature.
 
 Ephemeral DOM state — like scroll positions on sidebars, the content of <input> elements and so on — is discarded when you navigate from one page to another.
 
@@ -44,9 +44,10 @@ const comment = ref("") // This will be restored on nav and refresh
 const another = ref("") // This will be restored on nav
 const no = ref("") // This won't be
 
+// auto imported
 useSnapshot([
-  { capture: comment, restore: (v) => { comment.value = toValue(v) } },
-  { capture: another, restore: (v) => { another.value = toValue(v) }, persist: false }
+  { capture: comment, restore: (v) => { comment.value = v } },
+  { capture: another, restore: (v) => { another.value = v }, persist: false }
 ])
 </script>
 
@@ -58,9 +59,11 @@ useSnapshot([
 ```
 
 - The restoration will work after a navigation and a hard reload, like hitting the refresh button or navigating to another site and coming back.
-- The captured data must be serialized with `JSON.stringify`
-- The captured data is kept in memory, so don't capture too much data.
-- If the data is too large, the session storage won't work.
+- The restore function will run when the route path is matched
+- The hard reload feature works with the sessionStorage
+- The captured data must be serializable with `JSON.stringify` for the sessionStorage.
+- The captured data is kept in memory for the client side routing.
+- Browser ession storage is limited, so don't use something too large.
 
 ## 📦 Contributing
 
