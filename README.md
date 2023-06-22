@@ -1,4 +1,14 @@
-# ⚗️ Snapshot Dom Nuxt Module
+# Snapshot Dom Nuxt Module
+
+[![npm version][npm-version-src]][npm-version-href]
+[![npm downloads][npm-downloads-src]][npm-downloads-href]
+[![CI](https://github.com/Hebilicious/dom-snapshot-nuxt/actions/workflows/ci.yaml/badge.svg)](https://github.com/Hebilicious/dom-snapshot-nuxt/actions/workflows/ci.yaml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[npm-version-src]: https://img.shields.io/npm/v/@hebilicious/dom-snapshot-nuxt
+[npm-version-href]: https://npmjs.com/package/@hebilicious/dom-snapshot-nuxt
+[npm-downloads-src]: https://img.shields.io/npm/dm/@hebilicious/dom-snapshot-nuxt
+[npm-downloads-href]: https://npmjs.com/package/@hebilicious/dom-snapshot-nuxt
 
 🚀 Welcome to __Hebilicious Snapshot Dom Nuxt Module__!  
 
