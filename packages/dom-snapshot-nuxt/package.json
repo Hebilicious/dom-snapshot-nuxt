@@ -46,12 +46,12 @@
     "vite": "*"
   },
   "dependencies": {
-    "@nuxt/kit": "3.6.0",
-    "@vueuse/core": "^10.2.0",
+    "@nuxt/kit": "3.6.1",
+    "@vueuse/core": "^10.2.1",
     "defu": "^6.1.2"
   },
   "devDependencies": {
     "@nuxt/module-builder": "^0.4.0",
-    "h3": "^1.7.0"
+    "h3": "^1.7.1"
   }
 }
