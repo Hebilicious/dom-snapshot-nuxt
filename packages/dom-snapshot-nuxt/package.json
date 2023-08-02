@@ -43,15 +43,15 @@
   },
   "peerDependencies": {
     "nuxt": "latest",
+    "h3": "*",
     "vite": "*"
   },
   "dependencies": {
-    "@nuxt/kit": "3.6.1",
-    "@vueuse/core": "^10.2.1",
+    "@nuxt/kit": "3.6.5",
+    "@vueuse/core": "^10.3.0",
     "defu": "^6.1.2"
   },
   "devDependencies": {
-    "@nuxt/module-builder": "^0.4.0",
-    "h3": "^1.7.1"
+    "@nuxt/module-builder": "^0.4.0"
   }
 }

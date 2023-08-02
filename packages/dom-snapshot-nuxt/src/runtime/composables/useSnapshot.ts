@@ -13,9 +13,8 @@ export function useSnapshot(snaps: Snapshot[]) {
   const values = snapshots.value.get(path)
   if (values) {
     for (const [i, snap] of snaps.entries()) {
-      if (values[i].capture !== noRestore) {
+      if (values[i].capture !== noRestore)
         snap.restore(values[i].capture)
-      }
     }
   }
 
