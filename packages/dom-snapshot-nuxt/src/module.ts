@@ -1,8 +1,9 @@
 import { addImports, addPlugin, createResolver, defineNuxtModule, useLogger } from "@nuxt/kit"
+import type { NuxtModule } from "@nuxt/schema"
 
 const NAME = "dom-snapshot-nuxt"
 
-export default defineNuxtModule({
+export default defineNuxtModule<NuxtModule>({
   meta: {
     name: NAME
   },
