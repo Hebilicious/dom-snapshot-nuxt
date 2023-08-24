@@ -15,10 +15,10 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.21.5",
+    "@antfu/ni": "^0.21.6",
     "@hebilicious/eslint-config": "0.0.3-beta.3",
     "@nuxt/test-utils": "^3.6.5",
-    "@types/node": "^18.17.6",
+    "@types/node": "^18.17.11",
     "bumpp": "^9.2.0",
     "conventional-changelog-cli": "^3.0.0",
     "eslint": "8.47.0",
@@ -30,8 +30,8 @@
     "rimraf": "^5.0.1",
     "simple-git-hooks": "^2.9.0",
     "taze": "^0.11.2",
-    "turbo": "^1.10.12",
-    "typescript": "^5.1.6",
+    "turbo": "^1.10.13",
+    "typescript": "^5.2.2",
     "unbuild": "^1.2.1",
     "vitest": "^0.34.2"
   },
