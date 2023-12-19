@@ -3,7 +3,7 @@
   "type": "module",
   "version": "0.0.3",
   "private": true,
-  "packageManager": "pnpm@8.6.12",
+  "packageManager": "pnpm@8.12.1",
   "scripts": {
     "build": "rimraf packages/*/dist && turbo run build --filter=@hebilicious/dom-snapshot-nuxt",
     "turbo:build": "turbo run build",
@@ -15,25 +15,25 @@
     "test": "vitest"
   },
   "devDependencies": {
-    "@antfu/ni": "^0.21.6",
+    "@antfu/ni": "^0.21.12",
     "@hebilicious/eslint-config": "0.0.3-beta.3",
-    "@nuxt/test-utils": "^3.6.5",
-    "@types/node": "^18.17.11",
-    "bumpp": "^9.2.0",
+    "@nuxt/test-utils": "^3.9.0",
+    "@types/node": "^18.19.3",
+    "bumpp": "^9.2.1",
     "conventional-changelog-cli": "^3.0.0",
-    "eslint": "8.47.0",
+    "eslint": "8.56.0",
     "esno": "^0.17.0",
-    "fast-glob": "^3.3.1",
+    "fast-glob": "^3.3.2",
     "lint-staged": "^13.3.0",
-    "pnpm": "8.6.12",
-    "prettier": "^3.0.2",
-    "rimraf": "^5.0.1",
+    "pnpm": "8.12.1",
+    "prettier": "^3.1.1",
+    "rimraf": "^5.0.5",
     "simple-git-hooks": "^2.9.0",
-    "taze": "^0.11.2",
-    "turbo": "^1.10.13",
-    "typescript": "^5.2.2",
+    "taze": "^0.13.0",
+    "turbo": "^1.11.2",
+    "typescript": "^5.3.3",
     "unbuild": "^1.2.1",
-    "vitest": "^0.34.2"
+    "vitest": "^0.34.6"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
