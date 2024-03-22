@@ -33,7 +33,7 @@
     "turbo": "^1.13.0",
     "typescript": "^5.4.3",
     "unbuild": "^1.2.1",
-    "vitest": "^0.34.6"
+    "vitest": "^1.4.0"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged"
