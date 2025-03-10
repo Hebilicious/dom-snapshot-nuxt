@@ -20,7 +20,7 @@
     "@nuxt/test-utils": "^3.14.4",
     "@types/node": "^22.13.9",
     "bumpp": "^10.0.3",
-    "conventional-changelog-cli": "^3.0.0",
+    "conventional-changelog-cli": "^5.0.0",
     "eslint": "8.57.1",
     "esno": "^0.17.0",
     "fast-glob": "^3.3.2",
