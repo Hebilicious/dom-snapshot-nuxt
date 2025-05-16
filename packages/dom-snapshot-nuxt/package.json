@@ -47,8 +47,8 @@
     "vite": "*"
   },
   "dependencies": {
-    "@nuxt/kit": "3.13.2",
-    "@vueuse/core": "^13.0.0",
+    "@nuxt/kit": "3.17.3",
+    "@vueuse/core": "^13.2.0",
     "defu": "^6.1.4"
   },
   "devDependencies": {
