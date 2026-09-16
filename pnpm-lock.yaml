@@ -78,8 +78,8 @@ importers:
         specifier: 4.0.0
         version: 4.0.0
       '@vueuse/core':
-        specifier: ^13.0.0
-        version: 13.0.0(vue@3.5.41)
+        specifier: ^15.0.0
+        version: 15.0.0(vue@3.5.41)
       defu:
         specifier: ^6.1.4
         version: 6.1.5
@@ -5770,14 +5770,15 @@ packages:
       - vue
     dev: true
 
-  /@vueuse/core@13.0.0(vue@3.5.41):
-    resolution: {integrity: sha512-rkgb4a8/0b234lMGCT29WkCjPfsX0oxrIRR7FDndRoW3FsaC9NBzefXg/9TLhAgwM11f49XnutshM4LzJBrQ5g==}
+  /@vueuse/core@15.0.0(vue@3.5.41):
+    resolution: {integrity: sha512-Zv67h5mrk7YHDJsRObx+DXaCBz6RKBUpxqLesJ+3xZNPG6yuQs7ja7kg3veFrrouYLWAqydQ7CwGEbLVxB43Ng==}
+    engines: {node: '>=22'}
     peerDependencies:
       vue: ^3.5.0
     dependencies:
       '@types/web-bluetooth': 0.0.21
-      '@vueuse/metadata': 13.0.0
-      '@vueuse/shared': 13.0.0(vue@3.5.41)
+      '@vueuse/metadata': 15.0.0
+      '@vueuse/shared': 15.0.0(vue@3.5.41)
       vue: 3.5.41(typescript@5.9.3)
     dev: false
 
@@ -5835,8 +5836,9 @@ packages:
     resolution: {integrity: sha512-l9Q502TBTaPYGanl1G+hPgd3QX5s4CGnpXriVBR5fEZ/goI6fvDaVmIl3Td8oKFurOxTmbXvBPSsgrd6eu6HYg==}
     dev: true
 
-  /@vueuse/metadata@13.0.0:
-    resolution: {integrity: sha512-TRNksqmvtvqsuHf7bbgH9OSXEV2b6+M3BSN4LR5oxWKykOFT9gV78+C2/0++Pq9KCp9KQ1OQDPvGlWNQpOb2Mw==}
+  /@vueuse/metadata@15.0.0:
+    resolution: {integrity: sha512-sfWE5LADAKJ0KnjtGliMdSN8Ij/L7uP6rXIZlgPloAI4zvvefbw6H5Lt7KJA6RqQOYgVqWF5Guj50HHMIzygBg==}
+    engines: {node: '>=22'}
     dev: false
 
   /@vueuse/shared@11.1.0(vue@3.5.12):
@@ -5848,8 +5850,9 @@ packages:
       - vue
     dev: true
 
-  /@vueuse/shared@13.0.0(vue@3.5.41):
-    resolution: {integrity: sha512-9MiHhAPw+sqCF/RLo8V6HsjRqEdNEWVpDLm2WBRW2G/kSQjb8X901sozXpSCaeLG0f7TEfMrT4XNaA5m1ez7Dg==}
+  /@vueuse/shared@15.0.0(vue@3.5.41):
+    resolution: {integrity: sha512-vbNXhGrbV53xPOMSyOzMHQRvhMgZf7oNDw2RChUetVxwTIEkInQ1joZ9JbT0G3z2n2AJNjvmCWeM9ySYrnvogA==}
+    engines: {node: '>=22'}
     peerDependencies:
       vue: ^3.5.0
     dependencies:
